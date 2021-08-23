@@ -227,6 +227,11 @@ $(document).ready(function() {
      ]
     });
 
+    $('.filters ul li').click(function(){
+      $('.filters ul li').removeClass('active');
+      $(this).addClass('active');
+    });
+
     // show comments    
     $('.views').on('click', function () {
         $(this).parents(".post-meta").siblings(".coment-area").slideToggle("slow");
@@ -241,25 +246,52 @@ $(document).ready(function() {
     $(".btnfeedback").click(function(){
         $(".insidefeedback").slideToggle(500);
     });
+
+    // Share Area
+    $('.share p').on('click', function() {
+      $('.socialshare').slideToggle('fast', function() {});
+      $('.share p').toggleClass('open');
+      // $('.share p:after').css('content', '-');
+      $('.socialshare').toggleClass('shake');
+    });
+
+    //Like Area
+    $('a.like-button').on('click', function(e) {
+      $(this).toggleClass('liked');
+      
+      setTimeout(() => {
+        $(e.target).removeClass('liked')
+      }, 1000)
+    });
+
     
 })(window.jQuery);
 
-$(window).load(function() {
-     $('.filters ul li').click(function(){
-      $('.filters ul li').removeClass('active');
-      $(this).addClass('active');
-      
-      var data = $(this).attr('data-filter');
-      $grid.isotope({
-        filter: data
-      })
-    });
 
-    var $grid = $(".grid").isotope({
-      itemSelector: ".all",
-      percentPosition: true,
-      masonry: {
-        columnWidth: ".all"
-      }
-    })
+$('.filter-button').on('click', (e) => {
+  const filter = $(e.target).attr('data-filter');
+  console.log(filter);
+    const items = $('.item-gallery').parent();
+  for (item of items) {
+    if (filter == '') {
+      
+      $(item).addClass('animated zoomIn faster');
+      $(item).parent().addClass('animated zoomIn faster');
+      $(item).removeClass('d-none');
+      $(item).parent().removeClass('d-none');
+      
+     
+      console.log('x');
+    }else if ($(item).attr('data-category') == filter) {
+      $(item).addClass('animated zoomIn faster');
+      $(item).parent().addClass('animated zoomIn faster');
+      $(item).removeClass('d-none');
+      $(item).parent().removeClass('d-none');
+    } else {
+      $(item).addClass('d-none');
+      $(item).parent().addClass('d-none');
+      $(item).removeClass('animated zoomIn faster');
+      $(item).parent().removeClass('animated zoomIn faster');
+    }
+  }
 });
