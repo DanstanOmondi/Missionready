@@ -116,7 +116,7 @@
               <!-- Slot info end --> 
             </div>
             <div class="event-button">
-              <a href="#" class="main-btn">Book Now</a>
+              <button href="javascript:void(0)" class="main-btn" data-bs-toggle="modal" data-bs-target="#eventsmodal">Book Now</button>
             </div>
           </div>
         </div>
@@ -124,6 +124,32 @@
     </div>
   </section>
   <!--============ Banner Area End ============-->
+
+  <!-- Modal -->
+<div class="modal modalform fade" id="eventsmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-newsletter-wrap">
+                <form class="eventmodal-form" action="" method="post">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Your name" required="" autocomplete="off">
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="email" id="name" placeholder="Your email" required="" autocomplete="off">
+                  </div>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+                 
+              </div>
+      </div>
+    </div>
+  </div>
+</div>
   
   <main class="maincontent">
     <section class="insidecontent">

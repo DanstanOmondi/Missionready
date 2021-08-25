@@ -2501,8 +2501,9 @@ span#nav-close {
 .single-case .video-ovelay-single:hover  img {
     transform: scale(1.1);
 }
-.share-form-area{
-	padding: 60px 0;
+.share-form-area {
+    padding: 60px 0;
+    position: relative;
 }
 .share-form-text h2{
 	font-size:4rem;
@@ -2734,6 +2735,16 @@ span.time-posted {
     height: 60px;
     padding: 10px 15px;
     width: 100%;
+}
+.post-comt-box form .form-control{
+    background: #edf9ef;
+    border-color: transparent;
+    font-size: 14px;
+    height: 40px;
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0;
 }
 .post-comt-box form textarea:focus{
 	border-color: rgba(0,0,0,.1);
@@ -2982,6 +2993,99 @@ span.time-posted {
     display: block;
     width: 100%;
 }
+
+.videoarea {
+    margin: 0 0 30px;
+}
+.videoarea p{
+	margin-top: 15px;
+}
+.share-form-area .back-btn {
+    top: 20px;
+    position: absolute;
+}
+/* ---------------------------------------------------
+    Event form
+----------------------------------------------------- */
+.modalform .modal-dialog {
+	position: absolute;
+	top:50%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height:auto;
+	-webkit-box-align: center;
+	  -ms-flex-align: center;
+	      align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 650px;
+	border-radius: 0;
+	margin: auto !important;
+	    transform: translateY(-50%) !important;
+    -webkit-transform: translateY(-50%) !important;
+}
+.modalform.modal {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.modalform h3{
+	color: #404040;
+	font-size: 21px;
+	margin-bottom: 15px;
+}
+
+.modalform .eventmodal-form .form-control {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border:none;
+  border-bottom: 1px solid #eeeeee;
+  height: 60px;
+  padding-left: 15px;
+  border-radius: 0;
+  outline: 0;
+  color: #292929;
+  margin-bottom: 15px;
+}
+.modalform .eventmodal-form .form-control:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.modalform .eventmodal-form .form-control:focus:-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.modalform .eventmodal-form .form-control:focus::-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.modalform .eventmodal-form .form-control:focus::placeholder {
+  color: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.modalform .eventmodal-form button {
+  display: inline-block;
+  border: none;
+  background-color: #2cb34a;
+  color: #ffffff;
+  padding: 10px 35px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px;
+}
+.modalform .eventmodal-form button:hover,
+.modalform .eventmodal-form button:focus{
+  background-color: #1b9336;
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES
@@ -3251,6 +3355,9 @@ h4.timeline-year {
 .single-popip-intro p {
     font-size: 18px;
 }
+.bannercontent {
+    width: 100%;
+}
 }
 @media screen and (max-width:390px){
 .content-blk-intro.right-blockintro {
@@ -3290,6 +3397,33 @@ h4.timeline-year {
 .hero-banner-text h1 {
     font-size: 28px;
     margin-bottom: 15px;
+}
+.textshare {
+    margin: 30px 15px 30px;
+}
+.video-link .ht-popup-video .video-button__two .video-play {
+    width: 45px;
+    height: 45px;
+}
+.video-link .ht-popup-video .video-button__two .video-play-icon::before {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #000000;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-left-width: 12px;
+}
+.video-link .ht-popup-video .video-button__two {
+    top: 40%;
+}
+.video-link .ht-popup-video.video-button .video-mark {
+    top: 40%;
+}
+.owl-theme.home-carousel .owl-nav [class*=owl-] {
+    font-size: 12px;
+}
+.section-title p {
+    font-size: 15px;
 }
 }
 @media screen and (max-width:320px){
