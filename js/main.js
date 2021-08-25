@@ -156,7 +156,7 @@ $(document).ready(function() {
                 items: 1,
                 nav: true
             },
-            500: {
+            600: {
                 items: 1,
             },
             700: {
@@ -187,10 +187,16 @@ $(document).ready(function() {
             slidesToShow:5,
            }
           },
+          {
+          breakpoint: 600,
+          settings: {
+            slidesToShow:3,
+           }
+          },
          {
           breakpoint: 0,
           settings: {
-            slidesToShow:4,
+            slidesToShow:2,
             slidesToScroll: 1,
           }
         }
@@ -214,7 +220,7 @@ $(document).ready(function() {
           breakpoint: 0,
           settings: {
               centerMode: false,
-              slidesToShow: 3,
+              slidesToShow: 1,
           }
         },
            {

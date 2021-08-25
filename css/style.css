@@ -1316,11 +1316,10 @@ span#nav-close {
 =         36. Processing Hero Css             =
 =============================================*/
 .hero-banner-bg {
-	/*background-color:transparent;*/
-	background-repeat:no-repeat !important;
-	background-size:cover;
-	background-position: 50% 50%;
-	min-height:500px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+    min-height: 80vh;
 }
 .hero-banner-text {
     max-width: 430px;
@@ -1392,8 +1391,9 @@ span#nav-close {
 .quote-tp-area .container-fluid .row .col-lg-7 {
     padding: 0;
 }
-.quote-tp-area-img img{
-	border-bottom-right-radius:50px;
+.quote-tp-area-img img {
+    border-bottom-right-radius: 50px;
+    width: 100%;
 }
 
 .quote-tp-content .content{
@@ -2999,34 +2999,298 @@ span.time-posted {
 @media screen and (max-width:1300px){
 }
 @media screen and (max-width:1280px){
+.full-width-header .rs-header .menu-area.sticky .menu-btnarea {
+    right: 5rem;
+}
+.quote-tp-content .content blockquote {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+.content-blk-intro {
+    padding: 20px 0 20px 10rem;
+}
+.event-slot-info h3 {
+    font-size: 18px;
+}
+.event-slot-info p {
+    font-size: 14px;
+}
+.insidecontent-info {
+    width: 80%;
+}
+
+.event-listing .event-slot-time {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
+    flex: auto;
+}
+.block-title h2:before {
+    width: 50%;
+}
+.textshare {
+    padding: 0 2rem;
+    margin: 30px 30px 60px;
+}
 }
 @media screen and (max-width:1200px){
 }
 @media screen and (max-width:1150px){
 }
 @media screen and (max-width:1100px){
+.top-getinfo {
+    width: 100%;
+}
+.top-getinfo p {
+    font-size: 16px;
 }
 @media screen and (max-width:1024px){
+.content-blk-intro h2 {
+    font-size: 3rem;
+}
+.hero-banner-bg {
+    min-height: 70vh;
+}
+.quote-tp-content .content blockquote {
+    font-size: 16px;
+}
+.inside-banner {
+    min-height: 50vh;
+}
+.full-width-header .rs-header .right_menu_togle.custom .inner-offcanvas {
+    padding: 20px 0 30px;
+}
+.inside-banner h2 {
+    font-size: 3rem;
+}
+.menu-btnarea {
+    right: 5rem;
+}
+.item-content {
+    padding: 0 0 15px 25px;
+    margin: 15px 0 30px;
+}
+.share-top-text h3 {
+    margin-top: 20px;
+    font-size: 21px;
+}
+.share-top-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.full-width-header .rs-header .right_menu_togle {
+    width: 40%;
+}
 }
 @media screen and (max-width:991px){
+.content-blk-slider {
+    width: 90%;
+    margin: 0 auto;
+}
+.home-carousel .owl-stage {
+    left: 0;
+}
+.content-blk-intro {
+    padding: 20px 5rem 25px 10rem;
+}
+.content-blk-intro h2:before {
+    width: 25%;
+}
+.events-section .section-title h2:before {
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+}
+.insidecontent-info {
+    width: 100%;
+}
+.eventcontent {
+    padding: 60px 0;
+}
+.block-title h2:before {
+    border-bottom: none;
+}
+.block-title {
+    padding: 30px 0 0;
+}
+.inside-banner h2 {
+    margin-top: 5rem;
+}
+.bannercontent {
+    float: left;
+    margin-top: 15px;
+}
+.back-btn a {
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+.share-form-text h2 {
+    font-size: 3rem;
+}
 }
 @media screen and (max-width:900px){
 }
 @media screen and (max-width:800px){
 }
 @media screen and (max-width:767px){
+.menu-btnarea ul li a {
+    padding: 10px 12px;
+    font-size: 14px;
+}
+.content-blk-intro h2 {
+    font-size: 2rem;
+}
+.quote-tp-content .content {
+    padding: 10px 30px 30px;
+}
+.content-blk-intro h2:before {
+    display: none;
+}
+.content-blk-intro {
+    padding: 20px 2rem 25px 3rem;
+}
+.content-blk-intro.right-blockintro h2:before {
+    display: none;
+}
+.subscribe-form form .input-newsletter {
+    font-size: 14px;
+}
+h4.timeline-year {
+    font-size: 18px;
+}
+.inside-banner h2 {
+    font-size: 2.5rem;
+}
+.inside-banner {
+    padding: 15px 0;
+}
+.subscribe-form form button {
+    padding: 0 25px;
+}
+.edition-banner h2 {
+    font-size: 3rem;
+}
+.full-width-header .rs-header .right_menu_togle {
+    width: 60%;
+}
+.events-section .section-title h2 {
+    font-size: 2.5rem;
+}
+.inside-banner {
+    min-height: 35vh;
+}
+.share-form-text h2 {
+    font-size: 2.5rem;
+}
 }
 @media screen and (max-width:700px){
 }
 @media screen and (max-width:630px){
+.p-60 {
+    padding: 30px 0;
+}
 }
 @media screen and (max-width:600px){
+.share-form-text p {
+    font-size: 16px;
+}
+.socialshare {
+    left: 0;
+}
 }
 @media screen and (max-width:575px){
+.menu-btnarea {
+    display: none;
+}
+.hero-banner-text {
+    margin-top:30px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+.hero-banner-bg{
+	position: relative;
+}
+.hero-banner-bg:before {
+    content: "";
+    background: rgba(0,0,0,0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.events-section .section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.item-content p {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.share-top-text h4 {
+    font-size: 14px;
+    letter-spacing:1px;
+}
 }
 @media screen and (max-width:480px){
+.inside-banner h2 {
+    font-size: 2.2rem;
+}
+.full-width-header .rs-header .right_menu_togle {
+    width: 75%;
+}
+.single-popip-intro p {
+    color: #000;
+    font-size: 18px;
+    font-family: 'futuramedium';
+}
+.single-popip-intro p {
+    font-size: 18px;
+}
 }
 @media screen and (max-width:390px){
+.content-blk-intro.right-blockintro {
+    padding: 20px 2rem 20px 2rem;
+}
+.content-blk-intro {
+    padding: 20px 2rem 25px 2rem;
+}
+.edition-banner h2 {
+    font-size: 2.5rem;
+}
+.subscribe-form form button {
+    padding: 0 15px;
+    font-size: 12px;
+}
+.subscribe-form form .input-newsletter {
+    font-family: 'futuramedium';
+    font-size: 13px;
+}
+.subscribeinfo h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.footermenu ul li {
+    display: block;
+    margin: 10px 0;
+}
+.edition-banner {
+    min-height: 300px;
+}
+.content-blk-slider {
+    width: 98%;
+}
+.content-blk-intro h2 {
+    font-size: 1.8rem;
+}
+.hero-banner-text h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
 }
 @media screen and (max-width:320px){
 }
