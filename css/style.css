@@ -2420,10 +2420,12 @@ span#nav-close {
 	color: #FFF;
 }
 
+.single-story .video-ovelay-single,
 .single-case .video-ovelay-single {
     position: relative;
     overflow: hidden;
 }
+.single-story .video-ovelay-single a,
 .single-case .video-ovelay-single a{
 	position: relative;
 	display: block;
@@ -2431,6 +2433,7 @@ span#nav-close {
 	height: 100%;
 	overflow: hidden;
 }
+.single-story .video-ovelay-single a:before,
 .single-case .video-ovelay-single a:before{
 	content: "";
 	width: 100%;
@@ -2440,6 +2443,7 @@ span#nav-close {
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
 }
+.single-story .video-ovelay-single .video-play,
 .single-case .video-ovelay-single .video-play {
     z-index: 97;
     position: absolute;
@@ -2447,6 +2451,7 @@ span#nav-close {
     right: 10%;
     bottom:12%;
 }
+.single-story .video-ovelay-single .video-play:before,
 .single-case .video-ovelay-single .video-play:before {
     content: '';
     width:40px;
@@ -2462,13 +2467,16 @@ span#nav-close {
     transform: translate(-50%,-50%);
     z-index: 97;
 }
+.single-story .video-ovelay-single:hover .video-play:before,
 .single-case .video-ovelay-single:hover .video-play:before {
     background: #FFF;
     color: #36AA4A
 }
+.single-story .video-ovelay-single:hover .video-play:after,
 .single-case .video-ovelay-single:hover .video-play:after {
 	color: #36AA4A
 }
+.single-story .video-ovelay-single .video-play:after,
 .single-case .video-ovelay-single .video-play:after {
     content: '\ec74';
     font-family: Icofont;
@@ -2488,6 +2496,7 @@ span#nav-close {
     transform: translate(-50%,-50%);
     z-index: 98;
 }
+.single-story .video-ovelay-single img,
 .single-case .video-ovelay-single img {
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -2498,6 +2507,7 @@ span#nav-close {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
+.single-story .video-ovelay-single:hover  img,
 .single-case .video-ovelay-single:hover  img {
     transform: scale(1.1);
 }
@@ -2997,6 +3007,15 @@ span.time-posted {
 .videoarea {
     margin: 0 0 30px;
 }
+.videoarea h2{
+	margin: 10px 0 15px;
+	font-size: 28px;
+}
+.videoarea h3{
+	font-size: 22px;
+	margin: 15px 0 0;
+	color: #2CB34A;
+}
 .videoarea p{
 	margin-top: 15px;
 }
@@ -3084,6 +3103,47 @@ span.time-posted {
 .modalform .eventmodal-form button:hover,
 .modalform .eventmodal-form button:focus{
   background-color: #1b9336;
+}
+
+.stories-blockarea{
+	padding: 30px 0;
+}
+.single-story{
+	border-bottom-right-radius: 30px;
+	-webkit-transition: .5s;
+    transition: .5s;
+    margin:15px 0;
+}
+.single-story .image img {
+	width: 100%;
+    border-bottom-right-radius: 30px;
+}
+.single-story:hover{
+	background: #2CB34A;
+}
+.single-story .content{
+	padding: 15px;
+}
+.single-story h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    margin-top:5px;
+}
+.single-story a{
+    color:#2CB34A;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.single-story a i{
+	margin-left: 15px;
+	font-size:21px;
+	position: relative;
+	top: 3px;
+}
+
+.single-story:hover h3,
+.single-story:hover a{
+	color: #FFF;
 }
 
 
