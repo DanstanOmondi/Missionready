@@ -126,6 +126,17 @@ $(document).ready(function() {
         items: 1,
         margin: 15,
         stagePadding:50,
+        responsive:{
+            0: {
+                stagePadding:0,
+            },
+            600: {
+                stagePadding:20,
+            },
+            700: {
+                stagePadding:40,
+            }
+        }
     });
 
     //LightBox / Fancybox
